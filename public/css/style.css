@@ -10,6 +10,11 @@
     margin: 200px 50px;
 }
 
+#projects {
+    text-align: center;
+    margin-top: 30px;
+}
+
 /* 
 .navbar-toggle {
     border: none;
