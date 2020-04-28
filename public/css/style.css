@@ -6,11 +6,11 @@
     margin: 200px 50px;
 }
 
-#projects {
+/* #projects {
     text-align: center;
     justify-content: center;
     margin: auto;
-}
+} */
 
 #about img {
     /* padding: 25px; */
@@ -110,6 +110,13 @@ footer {
 footer a {
     color:#383838;
     margin: 0px 8px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
 }
 
 .glyphicon {
