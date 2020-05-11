@@ -34,62 +34,100 @@
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 <body>
 
   <nav class="navbar navbar-expand-sm navbar-light bg-light">
-    <div class="container">
+  <!-- <nav class="navbar navbar-dark bg-dark"> -->
+    <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-          <!-- <span class="navbar-toggler-icon"></span> -->
-          <span class="dark-blue-text"><i
-            class="fas fa-bars fa-1x"></i></span>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!-- Hamburger menu icon -->
+          <!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
+          <!-- Actual hamburger -->
+          <i class="fas fa-hamburger" style='font-size:24px'></i>
         </button>
         <a class="navbar-brand" href="home.html"><img src="./images/Logo.svg" alt="SW Logo"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
+        
         <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item"><a href="./home.html#work">Work</a></li>
-            <li class="nav-item"><a href="./about.html">About</a></li>
-            <li class="nav-item"><a href="old_resume.pdf" target="_blank">Resume</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html#work">
+                Work
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="F20 Resume No Link Parse.pdf" target="_blank">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                Contact
+              </a>
+            </li>
         </ul>
       </div>
     </div>
 </nav>
 
+<div class="container-fluid padding" id="about">
+  <div class="col-12 about">
+    <h1 style="margin-left: 2rem; font-weight: 700;">About</h1>
+  </div>
+</div>
+
 <!-- <h1 style="font-weight: 700; margin: 0px 30%;">
   About</h1> -->
-    <div class="container" id="about">
-        <h1 style="font-weight: 700;">About</h1>
-        <div class="row">
-                <div class="col-sm-6">
-                    <p>I am in my third year of Systems Design Engineering student at the University of Waterloo. My passion for learning new things and solving new problems has lead me to internships involving data analytics, UX Design, and medical physics research. I am currently seeking a data science internship for fall 2020.</p>
-                    <p>In my free time you’ll find me bouldering at the nearest rockclimbing gym, trying new food and recipes, or travelling with family.</p>
-                </div>
-            <div class="col-sm-6 center-img">
-                <img src="images/profile_crop.JPG" class="img-fluid" alt="profile picture"/>
+<div class="container-fluid padding">
+    <div class="row padding">
+            <div class="col-md-6 bio">
+                <p>I am in my third year of Systems Design Engineering student at the University of Waterloo. My passion for learning new things and solving new problems has lead me to internships involving data analytics, UX Design, and medical physics research. I am currently seeking a data science internship for fall 2020.</p>
+                <p>In my free time you’ll find me bouldering at the nearest rockclimbing gym, trying new food and recipes, or travelling with family.</p>
+                <br>
+                <p>Let's chat! __ reword this                  
+                  <br>
+                  <a href="https://www.linkedin.com/in/sienna-wishart-645536163/">LinkedIn</a>
+                  <br>
+                  <a href="mailto:skmwisha@uwaterloo.ca" target="_top">skmwisha@uwaterloo.ca</a> 
+                  <br>
+                  <a href="F20 Resume No Link Parse.pdf" target="_blank">resume</a>
+                  <br>
+                </p>
+                <!-- <p>Lets chat! Email me at 
+                  <a href="mailto:skmwisha@uwaterloo.ca" target="_top">
+                  skmwisha@uwaterloo.ca</a> or checkout my 
+                  <a href="F20 Resume No Link Parse.pdf" target="_blank">resume</a>!
+                </p> -->
+                
             </div>
+        <div class="col-md-6 text-center">
+            <img src="images/profile_crop.JPG" class="img-fluid" alt="profile picture" style="width: 80%;"/>
         </div>
     </div>
+</div>
 
-  <!-- Footer -->
-  <footer class="container" id="contact">
-    <!-- <p class='footer_text'>Lets get in touch!</p> -->
+<hr class="light">
 
+<!-- Footer -->
+<footer class="container-fluid padding" id="contact">
+    <!-- <p class='footer_text'>Let's get in touch!</p> -->
     <!-- buttons to about, resume, linked in, email - symbols -->
     <div class="footer_text">
-      <a href="https://www.linkedin.com/in/sienna-wishart-645536163/"><i class="fa fa-linkedin" style="font-size:22px"></i></a>
-      <a href="https://github.com/siennawishart"><i class="fa fa-github" style="font-size:25px"></i></a>
-      <a href="mailto:sienna.wishart@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span></a>
+      <a href="https://www.linkedin.com/in/sienna-wishart-645536163/"><i class="fab fa-linkedin-in" style="font-size:22px"></i></a>
+      <a href="https://github.com/siennawishart"><i class="fab fa-github" style="font-size:25px"></i></a>
+      <a href="mailto:skmwisha@uwaterloo.ca" target="_top"><i class="fas fa-envelope"></i></a>
     </div>
-    
-    <!-- <i class="material-icons" style="font-size:24px"></i> -->
-    <!-- <i class="fa fa-instagram" style="font-size:24px"></i> -->
-    <!-- glyphicon glyphicon-menu-hamburger -->
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

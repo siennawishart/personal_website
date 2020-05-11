@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Fonts -->
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <!-- Bootstrap -->
@@ -15,89 +15,118 @@
   <link rel="stylesheet" href="./css/style.css">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 
 </head>
 <body>
 
   <nav class="navbar navbar-light bg-light">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>            </button>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <!-- Hamburger menu icon -->
+            <!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
+            <!-- Actual hamburger -->
+            <i class="fas fa-hamburger" style='font-size:24px'></i>
+          </button>
           <a class="navbar-brand" href="home.html"><img src="./images/Logo.svg" alt="SW Logo"></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="#work">Work</a></li>
-              <li><a href="./about.html">About</a></li>
-              <li><a href="old_resume.pdf" target="_blank">Resume</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <!-- <li><a href="#"><span class="glyphicon glyphicon-menu-hamburger"></span> Sign Up</a></li> -->
+              <li class="nav-item">
+                <a class = "#work nav-link">
+                  Work
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="F20 Resume No Link Parse.pdf" target="_blank">
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
           </ul>
         </div>
       </div>
   </nav>
 
   <!-- home -->
-  <header id="home">
-      <!-- logo -->
+  <!-- <header id="home">
         <div class="container">
             <h3 id="main_title">Sienna Wishart <img style="width: 55px; margin-bottom: 15px;" src="images/big pot plant.svg" alt="plant"/></h1>
             <p id="short_description" style="font-size: 20px;">One liner</p>
         </div>
-  </header>
+  </header> -->
 
-  <!-- projects -->
-  <div class="container" id="work">
-      <h4>Some of my work:</h4>
-      <div class="container" id="projects">
-          <div class="row" id="manulife">  
-              <div class="col-sm-6">
-                <p>Test TEst</p>
-              </div>
-              <div class="block col-sm-6 center-img">
-                <img src="images/blue project.png" class="img-responsive" alt="COVID-19 Analysis" alt="blue"/>
-                <div class="overlay">
-                  <div class="text">Manulife</div>
-                </div>
-              </div>
-          </div>
-          <div class="row" id="shottle">
-              <div class="block col-sm-6 center-img">
-                <svg width="878" height="517"  class="img-responsive">
-                  <rect width="878" height="517" style="fill:#39DC00;" />
-                </svg>
-                <div class="overlay">
-                  <div class="text">Shottle</div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <p>Test TEst</p>
-              </div>
-          </div>
-      </div>
+  <header class="home">
+    <!-- logo -->
+      <!-- <div class="container"> -->
+          <h1 class="main_title">Sienna Wishart</h1>
+          <p class="short_description" style="font-size: 20px;">One liner</p>
+      <!-- </div> -->
+</header>
+
+
+  <div class="container-fluid padding" id="work">
+    <div class="col-12 work">
+      <h4 style="margin-left: 2rem;">Some of my work:</h4>
+    </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="container" id="contact">
-      <!-- <h4 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact</h4> -->
-      <p class='footer_text'>Lets get in touch!</p>
+  <!-- 2 columns -->
+  <!-- projects -->
+  <div class="container-fluid padding">
+    <div class="row text-center" id="manulife">  
+        <div class="col-md-6">
+          <p>Put image/work here</p>
+          <p>Put paragraph description here</p>
+        </div>
+        <div class="block col-md-6">
+          <img src="images/blue project.png" class="img-responsive" alt="COVID-19 Analysis" alt="blue"/>
+          <div class="overlay">
+            <div class="text">Manulife</div>
+          </div>
+          <p>Put paragraph description here</p>
+        </div>
+    </div>
+    <!-- <div class="row" id="shottle">
+        <div class="block col-sm-6 center-img">
+          <svg width="878" height="517"  class="img-responsive">
+            <rect width="878" height="517" style="fill:#39DC00;" />
+          </svg>
+          <div class="overlay">
+            <div class="text">Shottle</div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <p>Test TEst</p>
+        </div>
+    </div> -->
+  </div>
 
-      <!-- buttons to about, resume, linked in, email - symbols -->
-      <div class="footer_text">
-        <a href="https://www.linkedin.com/in/sienna-wishart-645536163/"><i class="fa fa-linkedin" style="font-size:22px"></i></a>
-        <a href="https://github.com/siennawishart"><i class="fa fa-github" style="font-size:25px"></i></a>
-        <a href="mailto:sienna.wishart@gmail.com" target="_top"><span class="glyphicon glyphicon-envelope"></span></a>
-      </div>
-      
-      <!-- <i class="material-icons" style="font-size:24px"></i> -->
-      <!-- <i class="fa fa-instagram" style="font-size:24px"></i> -->
-      <!-- glyphicon glyphicon-menu-hamburger -->
-  </footer>
+    <!-- 1 column -->
+<hr>
+<!-- Footer -->
+<footer class="container-fluid padding" id="contact">
+  <p class='footer_text '>Let's get in touch!</p>
+  <!-- buttons to about, resume, linked in, email - symbols -->
+  <div class="footer_text">
+    <a href="https://www.linkedin.com/in/sienna-wishart-645536163/"><i class="fab fa-linkedin-in" style="font-size:22px"></i></a>
+    <a href="https://github.com/siennawishart"><i class="fab fa-github" style="font-size:25px"></i></a>
+    <a href="mailto:skmwisha@uwaterloo.ca" target="_top"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
