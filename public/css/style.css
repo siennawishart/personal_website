@@ -83,6 +83,7 @@ html, body {
 
 .home {
     padding: 20rem 0rem;
+
 }
 
 .home h1 {
@@ -97,11 +98,16 @@ html, body {
     /* margin: 0 auto; */
 }
 
+
 header {
     background-color: #ffffff;
     text-align: center;
     justify-content: center;
-    /* background-image: url(./images/Tree_1.svg); */
+    background-image: url("../images/Tree_1.svg"),url("../images/Tree_2.svg");
+    /* background-image: url("../images/Tree_2.svg"); */
+    background-repeat: no-repeat;
+    background-position: right,left;
+
     /* padding: 20px; */
 }
   
