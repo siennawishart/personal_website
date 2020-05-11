@@ -42,14 +42,21 @@ html, body {
 
 .navbar .navbar-nav li a:hover{
     background-color: #ffffff;
-    color: rgb(0, 146, 0);
+    /* color: rgb(0, 146, 0); */
+    color: #000000;
 }
 
 .navbar a {
-    color: black;
+    color: rgb(109, 109, 109);
     display: block;
     /* text-align: center; */
     /* padding: 14px 16px; */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000000 !important;
 }
 
 /* .navbar-toggler-icon {
@@ -63,8 +70,8 @@ html, body {
 } */
 
 .padding {
-    padding-bottom: 5rem;
-    margin: 0rem 2rem;
+    padding-bottom: 4rem;
+    margin: 0rem 3rem;
 }
 
 .home {
@@ -107,15 +114,16 @@ p {
 
 footer {
     background-color: #ffffff;
-    padding: 10px;
-    margin-top: 30px;
-    margin-bottom: 35px;
+    /* padding: 10px; */
+    margin-top: 2rem;
+    /* margin-bottom: 15px; */
     font-size: 23px;
 }
 
 footer a {
     color:#2b2b2b;
     margin: 0px 5px;
+    /* margin-top: 2rem; */
 }
 
 footer a:hover {
@@ -129,16 +137,6 @@ footer a:hover {
 
 .glyphicon {
     font-size: 18px;
-}
-
-.row {
-    /* margin: 6% 0%; */
-    /* margin-top: 6%;
-    margin-bottom: 10%; */
-}
-
-.center-img {
-    text-align: center;
 }
 
 svg {
@@ -195,12 +193,4 @@ hr {
     width: 100%;
     margin-top: .3rem;
     margin-bottom: 1rem;
-}
-
-.fab {
-
-}
-
-.fas {
-    
 }
