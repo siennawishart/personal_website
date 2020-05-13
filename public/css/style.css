@@ -14,7 +14,6 @@ html, body {
 }
 
 .about_title {
-    /* set margin to match paragraph below */
     margin-left: 5rem; 
     font-weight: 700;
     font-size: 50px;
@@ -30,13 +29,10 @@ html, body {
     width: 80%;
 }
 
-/* * {
-    font-family: 'Lato', 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
-} */
-
 .navbar {
     background-color: #ffffff;
     padding: 1rem;
+    margin: 0rem 2rem
 }
 
 .navbar .navbar-nav li {
@@ -66,16 +62,6 @@ html, body {
     color: #000000 !important;
 }
 
-/* .navbar-toggler-icon {
-    color: #000000;
-    background-color: green !important;
-} */
-
-/* .about{
-    font-size: 50px;
-    font-weight: 700;
-} */
-
 .padding {
     padding-bottom: 4rem;
     margin: 0rem 3rem;
@@ -92,12 +78,6 @@ html, body {
     top: 50%;
     transform: translateY(-50%); */
 }
-
-.bio {
-    /* width: 40%; */
-    /* margin: 0 auto; */
-}
-
 
 header {
     background-color: #ffffff;
@@ -213,7 +193,6 @@ svg {
 .block:hover .overlay {
     opacity:1;
 }
-  /* ^^^ */
 
 hr {
     border-top: 2px solid #2b2b2b;
