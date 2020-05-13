@@ -52,8 +52,6 @@ html, body {
 .navbar a {
     color: #6d6d6d;
     display: block;
-    /* text-align: center; */
-    /* padding: 14px 16px; */
 }
 
 .navbar-brand {
@@ -74,9 +72,6 @@ html, body {
 
 .home h1 {
     font-size: 500%;
-    /* position: absolute;
-    top: 50%;
-    transform: translateY(-50%); */
 }
 
 header {
