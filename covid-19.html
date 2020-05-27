@@ -12,7 +12,7 @@
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./src/css/style.css">
 
   <!-- <script src="jquery.js"></script> 
   <script> 
@@ -29,44 +29,44 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <!-- <nav class="navbar navbar-dark bg-dark"> -->
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <!-- Hamburger menu icon -->
-          <!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
-          <!-- Actual hamburger -->
-          <i class="fas fa-hamburger" style='font-size:24px'></i>
-        </button>
-          <!-- <a class="navbar-brand" href="home.html"><img src="./images/Logo.svg" alt="SW Logo"></a> -->
-          <a class="navbar-brand" href="index.html">Sienna Wishart</a>      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./src/documents/F20 Resume.pdf" target="_blank">
-                Resume
-              </a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#contact">
-                Contact
-              </a>
-            </li> -->
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<!-- <nav class="navbar navbar-dark bg-dark"> -->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <!-- Hamburger menu icon -->
+        <!-- <span class="glyphicon glyphicon-menu-hamburger"></span> -->
+        <!-- Actual hamburger -->
+        <i class="fas fa-hamburger" style='font-size:24px'></i>
+      </button>
+        <!-- <a class="navbar-brand" href="home.html"><img src="./images/Logo.svg" alt="SW Logo"></a> -->
+        <a class="navbar-brand" href="index.html">Sienna Wishart</a>      </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      
+      <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">
+              About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./src/documents/F20 Resume.pdf" target="_blank">
+              Resume
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              Contact
+            </a>
+          </li> -->
+      </ul>
     </div>
+  </div>
 </nav>
 
 <!-- <div class="container-fluid padding" id="about">
@@ -74,54 +74,208 @@
     <h1 class="about_title">COVID</h1>
   </div>
 </div> -->
+<br>
+<div class="col-12">
+  <h1 class="covid padding container-fluid" style="font-weight: 700; font-size: 4rem;">COVID-19 Analysis and Predictions</h1>
+</div>
 
-<div class="jumbotron jumbotron-fluid padding">
+<div class="jumbotron jumbotron-fluid padding covid">
     <div class="container">
-      <!-- <h1 class="display-4">Fluid jumbotron</h1> -->
-      <p class="lead">Type: Side Project</p>
-      <p class="lead">Duration: 2 weeks, 2020</p>
-      <p class="lead">Skills: Research, </p>
-      <p class="lead">Tech: Python, Pandas, </p>
+      <h3>Breakdown</h3>
+      <br>
+      <p class="lead">Personal Project: COVID-19 Analysis and Predictions</p>
+      <p class="lead">Duration: 2 weeks, April-May 2020</p>
+      <p class="lead">Skills: data analysis, feature engineering, research, time series analysis, data visualizations</data></p>
+      <p class="lead">Tech: Python, Pandas, Numpy, Seaborn, Matplotlib, Plotly, Prophet, Jupyter Notebook</p>
     </div>
   </div>
 
-  <iframe src="./src/images/country_compare_bar.html" height="650" width="800" style="border:none;"></iframe>
+  <!-- <iframe src="./src/images/country_compare_bar.html" height="650" width="800" style="border:none;"></iframe> -->
 
-  <!-- include file="./src/images/country_compare_bar.html" -->
-  <!-- <div w3-include-html="./src/images/country_compare_bar.html"></div> -->
-  <!-- <div id="includedContent"></div> -->
+<!-- temp -->
+<div class="covid padding container-fluid">
+  <h1>Summary</h1>
+  <ul>
+  <li>Features created:</li>
+  <ul>
+  <li>The number of deaths per case and the number of tests per population were compared to determine if the number of reported cases are accurate or if instead more testing needs to be done in the region.</li>
+  <li>The number of cases per test provides an idea of what percentage of a population has COVID-19, while taking into account the limitations in testing.</li>
+  <li>Severity (sum of ICU cases, hospitalizations, number of deaths) provides unbiased trends into the severity of the COVID-19 outbreak in a region.</li>
+  <li>The number of ICU cases per death also provides unbiased trends that show when a region's cases have steadied.</li>
+  <li>The number of cases per test can show the effects of a region's testing when looked at in conjunction with the number of tests per population.</li>
+  </ul>
+  <li>Quebec, the Canadian province hit hardest by COVID-19, should have followed British Columbia's COVID-19 testing and control strategies from the beginning, including province-wide communication within the healthcare industry, lots of testing early on, restricting long term care workers to one long term care facility, and recommending against non-essential travel early on.</li>
+  <li>The shape of Canada's infection curves are similar to countries with major outbreaks. As such, Canada should take note of other countries' plans for reopening and their results when devising a plan for reopening and containment of the outbreak.</li>
+  <li>Based on time series analysis predictions, global cases, deaths, and recoveries will continue to rise exponentially over the next 7 days after May 4th, 2020.</li>
+  </ul>
+  <br><h1>Background</h1>
+  <p>According to the CDC, the Coronavirus pandemic has affected countries world-wide, infecting over 4 million and causing at least 279,000 deaths. With so many people vulnerable to the disease, reducing community transmission through social distancing orders and country-wide lockdowns has become essential to reducing the spread of the virus. However, reducing community transmission has happened at the expense of the economy, and is not sustainable long term. [1]</p>
+  <p>Infections are still rising quickly in the United States, potentially leaving Canada at risk for more infections due to their proximity.</p>
+  <p>Canada in particular has had 67,702 confirmed cases, 4,693 deaths, and 31,262 recoveries as of May 4th, 2020 [2]. The majority of cases have come from Quebec with 36,150 confirmed, 2,725 deaths, and 8,928 recovered. While for a short time, British Columbia appeared to be developing into Canada's main epicenter of the virus, its infection rates slowed much quicker than Ontario and Quebec.</p>
+  <p>In order to stop this virus, herd immunity or immunizations are required, however as only a small percentage of the population has been exposed to the virus and a vaccine typically takes over a year to develop, we can expect the pandemic to continue for the foreseeable future [3].</p>
+  <p>In the meantime, data analysis and modelling to predict infection rates can be extremely helpful in making decisions towards reopening or shutting down countries and provinces, in tracking the progress of the virus, and in identifying strategies to contain the virus.</p>
+  <h2>Inspiration</h2>
+  <p>This project was inspired by Edureka's COVID-19 Outbreak Prediction using Machine Learning <a href="https://www.youtube.com/watch?v=_Hi6_JQesSQ" target="_blank" rel="noopener">video</a>.</p>
+  <h2>Goal</h2>
+  <p>The goals of this project are to use data analysis and modelling to:</p>
+  <ul>
+  <li>Observe the current state of COVID-19 in Canada</li>
+  <li>Compare differences amongst provinces, with a focus on Quebec and BC</li>
+  <li>Compare Canada's status with other countries</li>
+  <li>Predict world-wide COVID-19 numbers over 7 days.</li>
+  </ul>
+  <p>My personal goals were to improve my data analysis, modelling, and research skills, and to practice coming up with insights and new features that add value to the analysis</p>
+  <h2>What was challenging about the problem</h2>
+  <p>The biggest challenge was having to handle missing and non-standardized data. As a result, I had to spend significant time cleaning and standardizing the data from different sources.This also limited the inferences and plots that I could make to compare Canadian provinces and other countries as different areas collected different data (i.e. gender, age) in different formats (i.e. wide versus long).In particular, the main table I used in my analysis of Canadian provinces was missing ICU and hospitalization numbers before April 8th, 2020, which skewed some of my results involving BC, whose outbreak was mainly of concern before April 8th.</p>
+  <p>A second major challenge was that I did not have important data that would have influenced the conclusions and improved the accuracy of the predictions, e.g. age and other medical conditions of the individual cases, and did not have detailed information about the public health measures within each province or within the communities within each province. I was able to show changes in some of the case rates that were explained by some of the public health measures described in the press.</p>
+  <br>
+  <h1>Strategies used throughout the project (Methods and Results)</h1>
+  <h2>My Role</h2>
+  <p>Using Python, Jupyter Notebook, and Libraries such as Pandas, Numpy, Seaborn, Matplotlib, and Plotly, I gathered data from several different sources to produce tables, graphs, and new features from which I could base insights off of. I also performed research to provide background and to gain insight into the status of COVID-19 in Canadian Provinces and other countries.</p>
+  <h2>Reading/Cleaning/Formatting Data</h2>
+  <p>To do the analyses, I had to first clean and format the data properly:</p>
+  <ul>
+  <li>Converted JH wide data to long data format</li>
+  <li>Combined total cases, deaths, and recovered global data, accounting for inconsistencies among the Provincial data</li>
+  <li>Removing unnecessary columns (i.e. ID), rename columns to standardize column names across tables, formatting columns as appropriate (i.e. converting to datetime format, convert to title format, correct inconsistencies in naming)</li>
+  </ul>
+  <br><h1>Analyses</h1>
+  <h2>Summary Statistics of Canadian Data</h2>
+  <p>Overview of cases in Canada [2]</p>
+  <ul>
+  <li>Total confirmed cases in Canada as of May 9th, 2020: 67702</li>
+  <li>Total deaths in Canada as of May 9th, 2020: 4693</li>
+  <li>Total recovered in Canada as of May 9th, 2020: 31262</li>
+  </ul>
+  <img src="./src/images/graphs/1_can_summary.svg" class="img-fluid" alt="Canada Summary" style="width: 65%;"/>
+  <p>Based on the graph above, we can see that despite a sharp rise in cases near the beginning of May, likely due to changes in COVID-19 testing definitions, Canadian cases appear to be decreasing.</p>
+  <h2>Canadian Provincial Comparison</h2>
+  <img src="./src/images/graphs/2_prov_cases.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/3_prov_deaths.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/4_prov_recov.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Comparing provincial totals, it is clear that Quebec has been most affected by COVID-19, followed by Ontario and Alberta.</p>
+  <h3>Overall status as of March 9th, 2020</h3>
+  <p>To compare Canadian provinces in a more readable format, I created a table styled with gradient colours and a horizontal bar graph that clearly shows which provinces have been most affected by COVID-19 outbreaks.</p>
+  <img src="./src/images/graphs/5_provs_gradient.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/6_prov_compare_bar.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Observations from the figures above:</p>
+  <ul>
+  <li>Quebec has been hit the hardest by COVID-19 with the highest case rate and death rate and lowest recovery rate</li>
+  <li>Ontario had second highest case rate, but has more recoveries than Quebec</li>
+  <li>Smaller provinces such as Nova Scotia appear to have a relatively high infection rate with respect to population, so we can infer that COVID-19 is affecting the smaller parts of canada, although the error bars are probably larger because of the smaller number of cases.</li>
+  </ul>
+  <h3>Comparing case and death rates with test and ICU rates:</h3>
+  <p>As another measure of how well each province has handled their respective outbreaks, we can divide the <span style="font-weight: bold;">total number of deaths by the total number of cases</span> and compare it with the <span style="font-weight: bold;">total</span><span style="font-weight: bold;">number of tests by province population</span>. <span style="font-weight: bold;">To be entirely accurate in our deaths/cases ratio, </span>the entire population would need to be tested to confirm all existing cases, but since that would not be feasible, we can compare the ratio to the number of tests by population to give us an idea of the true deaths/cases ratio. As the number of tests/population increases, the lower and more accurate the deaths/cases ratio becomes as we can be more certain that the number of cases is accurate as most positive cases should have been identified with more testing. Therefore if the deaths/cases are relatively high in comparison to other provinces but the tests/population rate is relatively low, the deaths/cases is likely lower in real life, and <span style="font-weight: bold;">we can conclude that more testing needs to be done in that province.</span></p>
+  <img src="./src/images/graphs/7_prov_deaths_p_cases.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/8_prov_test_p_pop.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Observations from the graph above:</p>
+  <ul>
+  <li>BC remains way above Alberta in terms of death rate per confirmed case, despite having 4000 fewer confirmed cases.</li>
+  <li>This could be attributed to the point above, as we can see that Alberta has tested significantly more than almost all provinces given their population.</li>
+  <li>Quebec's Total Deaths per Case graph follows the shape of BC's, just 10 days behind. However, when BC's curve began to flatten out on April 13th, about 5 weeks after their outbreak had started, Quebec's curve was still growing. <span style="font-weight: bold;">This leads us to conclude BC likely could have been in the same position as Quebec is now, with ever-increasing cases had they not made immediate public health and other changes early in the course of the pandemic</span></li>
+  </ul>
+  <h3>Compare Rates by Population</h3>
+  <p>By graphing the number of ICU cases with respect to population and comparing it to the number of confirmed cases with respect to population, we can conclude which provinces were truly burdened by the virus.</p>
+  <img src="./src/images/graphs/9_prov_ICU_pop.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/10_prov_cases_pop.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Observations from the graph above:</p>
+  <ul>
+  <li>The two provinces with the highest cases per population are Quebec and Alberta, but Alberta has a lower ratio of ICU per population</li>
+  <li>Quebec's health system has been more severely affected by the disease as their ICU rates are the highest per population</li>
+  </ul>
+  <br><h1>Focussed analyses: Quebec and BC</h1>
+  <p>Given BC's success in flattening the curve after initially having the highest number of Cases in Canada and given Quebec's current status as the epicenter of COVID-19 in Canada, I decided to focus my analyses on these two provinces to highlight strategies that did and did not work in flattening the curve.</p>
+  <h2>Quebec</h2>
+  <p>Quebec has just under a quarter of Canada's population yet it also has the highest number of coronavirus cases in the country.</p>
+  <p>Quebec shut down schools and recommended against non-essential travel after the province had gone on spring break. The province's spring break took place the first week of March, and as far as most people knew at the time, the coronavirus was mostly affecting Asian countries, and Italy. However, soon after Quebec's spring break had started, several cities in the U.S. declared a state of emergency. Quebec only shutdown schools and recommended against non-essential travel on March 13th, after Quebec students had already been back in classes 4 days earlier after returning from vacation. It is likely that Quebec's early spring break was a factor in the province's high infection rate, as other provinces such as British Columbia shut down schools before their spring break, resulting in far fewer cases of coronavirus, despite BC's initial higher case rate [4].</p>
+  <p>Another reason for the high number of cases may have been retirees who spent their winter in warmer places, such as Florida or Hawaii. After the announcement of the pandemic and many flights getting cancelled, many of these people returned to Canada all at once, aware they needed to self-isolate for 14 days. However, as few of them had any food or supplies remaining at their homes, several people went to local supermarkets to stock up before going into quarantine, causing a sharp rise in cases [5] [6].</p>
+  <img src="./src/images/graphs/11_prov_qb_heatmap.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Based on the map above, we can observe that the majority of cases in Quebec come from Montreal, Laval, and Lanaudi&egrave;re. This makes sense as Monreal centre major airport for international travel, with many flights coming from New York, one of the biggest COVID-19 hotspots in the world, and due to Quebec's close proximity to the United States, center to the majority of the world's COVID-19 cases. Montreal, Laval, and Lanaudi&egrave;realso have the most dense populations in Quebec, which may help to explain the highest rates.</p>
+  <p>In British Columbia, a province that had tied for the most cases in Canada with Ontario until March 23rd and had the most cases with respect to its population from the beginning of February until April 3rd, the number of cases has been consistently low ever since. BC has had a tremendous decrease in cases, currently sitting at just over 2300 total cases as of May 9th. By comparing the early part of BC's case rate, we can see how BC managed to flatten their curve.</p>
+  <h2>Analysis of the effect of different testing and public health strategies in Quebec vs. British Columbia</h2>
+  <p>In the graphs below, there are some obvious spikes in the number of cases per test. These are often due to changes in testing criteria, which usually brings on a significantly higher number of cases that day.</p>
+  <h3>Province-wide testing changes</h3>
+  <p>Quebec changes to screening [7]:</p>
+  <ul>
+  <li>March 18th: Increase in screening capacity</li>
+  <li>March 22nd: Cases tested positive by hospital laboratories are now considered confirmed.</li>
+  <li>April 8th: Staff and all residents of CHSLDs must systematically undergo screening tests for COVID-19.</li>
+  </ul>
+  <p>Testing context BC [8]:</p>
+  <ul>
+  <li>As of March 16, testing guidelines changed to focus on hospitalized patients, healthcare workers, long term care facility staff and residents, and those part of a cluster or outbreak who experienced respiratory symptoms.</li>
+  <li>As of April 9, previous testing guidelines were expanded to include individuals with fever (&gt;38&deg;C) and cough or shortness of breath, including (a) residents of remote, isolated or Indigenous communities, (b) people living and working in congregate settings such as work-camps, correctional facilities, shelters, group homes, assisted living and seniors' residences, (c) people who are homeless or have unstable housing, (d) essential service providers (e.g. first responders), or (e) returning travellers identified at a point of entry to Canada. In addition to these priority groups, health care providers can order a COVID-19 test for any patient based on their clinical judgment.</li>
+  <li>As of Apr 21, universal testing guidelines were implemented to include all symptomatic individuals with fever (&gt;38&deg;C) and cough or shortness of breath.</li>
+  <li>April 15th: Change in reported testing definition. [Berry I, Soucy J-PR, Tuite A, Fisman D. Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada. CMAJ. 2020 Apr 14;192(15):E420. doi: <a href="https://doi.org/10.1503/cmaj.75262" target="_blank" rel="noopener">https://doi.org/10.1503/cmaj.75262</a>]</li>
+  </ul>
+  <h4>Steps BC took to contain the virus</h4>
+  <p>In addition to luck, BC took the following steps to avoid becoming the next virus epicenter [9]:</p>
+  <ul>
+  <li>Early communication across the province from higher ups to all doctors and centers regarding COVID-19 symptoms to look out for</li>
+  <li>Cancelled elective surgeries early to free up hospital beds in case COVID-19 hospitalizations increased</li>
+  <li>One of the first to develop a test for the disease</li>
+  <li>Lots of testing done early (started end of January), especially at long-term care facilities</li>
+  <li>Long-term care facilities stopped allowing visitors at the first sign of the disease and employees were required to work for one long-term care facility at most</li>
+  <li>Ontario and Quebec didn't do the employee thing until later in the crisis</li>
+  <li>Recommended against all non-essential travel outside of Canada and shutdown schools right before students left for spring break on March 12th (also had the advantage of having a late spring break) [10]</li>
+  <li>Shutdown of personal service establishments March 21st [11]</li>
+  <li>In contrast, Quebec did not take such immediate action with their long-term care facilities until well into their crisis and due to the early timing of their spring break [9], they did not not recommend against non-essential travel before many of their residents went on vacation for spring break.</li>
+  </ul>
+  <img src="./src/images/graphs/12_13_tests_cases_pop.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/14_deaths_case.svg" class="img-fluid" style="width: 65%;"/>
+  <p>To compare the number of positive cases per number of tests, two new features were created. The total number of cases <span style="font-weight: bold;">(TotalCases) was divided by the total number of tests (TotalTested)</span> to see cumulative trends in the number of positive cases per number of tests (<span style="font-weight: bold;">CasePerTest</span>) and the daily number of cases (DailyTotals) was divided by the daily number of tests (DailyTested) to give a daily trend in the number of positive cases per number of tests (<span style="font-weight: bold;">CasePerTestDaily</span>).</p>
+  <p>In the early days where some daily testing numbers were 0, which may have been because the number of tests were not being tracked at the beginning of the pandemic - we will drop rows where CasePerTest or CasePerTestDaily are 0, as these values will not accurately represent the the actual positive cases/test, since anything divided by 0 is infinity. These values will not be replaced with the mean value of the respective column as most values of 0 completed daily tests were in the early days of the pandemic, so replacing 0 with a much larger value would skew early results</p>
+  <p>As mentioned above, we can see that BC was testing much more than Quebec until the end of March. Increasing testing early on likely allowed BC to quickly flatten its curve. By comparing the tests per population to the number of deaths per case, we can infer that BC is has performed better than Quebec as their test rates are lower and their</p>
+  <h3>Positive cases per test</h3>
+  <img src="./src/images/graphs/15_16_total_daily_cases_test.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Looking at the ratio of positive <span style="font-weight: bold;">cases per test</span>, we can see the effects of a province's testing. As BC has a ratio close to 0 for the total positive cases per test, we can infer that the province is performing testing with few tests coming back positive, but we don't know how much testing is being done solely based on the ratio of cases per test. However as we know from plotting the total number of tests per population, BC is not testing nearly as much as Quebec and therefore we know that the number of cases must be low as we are not testing that many people.</p>
+  <h3>Attempting to compare severity to achieve unbiased observations</h3>
+  <p>While daily testing and positive case numbers can be somewhat inaccurate due to limited testing supplies leading to fewer tests given resulting in fewer positive cases being found during the months of March and early April and trouble in data collection due to a sudden intake in hospitalizations and testing demand, daily deaths, hospitalizations, and ICU numbers are less subjected to bias.</p>
+  <p>Therefore I created two new features, severity and ICU cases per death, to find unbiased trends in my data. Severity was calculated using the sum of deaths, hospitalizations, and ICU cases, and ICU cases per death was calculated by dividing the number of cases by the number of deaths. In addition, changing testing criteria and protocols lead to sudden increases in cases on the days of the updates.</p>
+  <img src="./src/images/graphs/17_18_severity_ICU_death.svg" class="img-fluid" style="width: 65%;"/>
+  <p>A province that would be considered stable and to have rid their COVID-19 infections would have a graph that descends until the total number of deaths, ICU cases, and hospitalized cases stop increasing, when it will look near constant. As we can see below, BC has essentially reached this point of stability in which the number of ICU and Hospitalized cases have reduced drastically. As Quebec's graph is still increasing, we can infer that the province has not yet been able to control their outbreak and the number of deaths, ICU cases, and hospitalized cases will continue to grow.</p>
+  <p>It is important to note that the total and daily number of ICU patients and hospitalized patients are missing from all provinces from the Provincial_Daily_Totals.csv file until April 8th, 2020. This largely affects BC's numbers in particular as BC was a main center for the COVID-19 breakout in Canada from mid-March until the beginning of April and we therefore miss the severity of BC's ICU and Hospitalized cases at its peak. Without daily data leading up to April 8th, all of the ICU cases were provided at once as a daily increase on April 8th. I was unable to find any datasets with ICU or hospitalization numbers for BC prior to April 8th. The numbers for Quebec are from a different dataset from the government of Quebec that contains cumulative ICU and hospitalization numbers from before April 8th, 2020.</p>
+  <br><h1>Comparison of Canadian and International Outcomes</h1>
+  <img src="./src/images/graphs/19_intern_cases.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/20_intern_cases_after_100.svg" class="img-fluid" style="width: 65%;"/>
+  <h6><span style="color: #666666; font-style: italic;">Infection rates per population</span></h6>
+  <p>By plotting infection rates per population, we can clearly see how well each country has handled their respective COVID-19 outbreaks. Italy and the U.S. have the highest ratio, however where Italy is flattening, the U.S. mirror's Italy's shape during the month of March, looking like growth will continue for the foreseeable future. These countries are followed by the UK and then Sweden. Sweden has been criticized for refusing to impose a strict lockdown, leaving businesses and schools for those under 16 open, enforcing social distancing, and allowing small groups to meet [12].</p>
+  <p>With their healthcare system able to handle the amount of COVID cases thus far, Sweden seems to have managed their outbreak and saved their economy in the short run, however in the long run, Sweden's economy is likely to be just as affected as other countries who imposed full lockdown [13].</p>
+  <img src="./src/images/graphs/21_intern_cases_pop.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Canada is not doing terribly in relation to other country's infection rate with respect to population, however there is obviously room for improvement as South Korea, China, and Hubei province were able to flatten their curves quickly despite their high populations and limited square footage.</p>
+  <p>Based on the above plots, Canada should aim to be like South Korea and China, who have flattened their curves, creating more of a sigmoid function. While it doesn't look like Canada's graph has flattened, the number of confirmed cases per day have decreased.</p>
+  <h6><span style="color: #666666; font-style: italic;">Infection rates per country (bar graph)</span></h6>
+  <img src="./src/images/graphs/22_intern_comp_bar.svg" class="img-fluid" style="width: 65%;"/>
+  <p>The shape of Canada's graph above follows a similar shape to the US, the UK, Sweden, and the early parts of Italy and South Korea. It is likely that Canada's numbers will continue to grow in the near future, however considering the infection rate with respect to population, it is unlikely that Canada will become the next U.S. or Italy if the country is re-opened carefully and its population follows social distancing and hand hygiene practices.</p>
+  <br><h1>Global Predictions using Prophet</h1>
+  <h5>Modelling cases, deaths, recoveries</h5>
+  <img src="./src/images/graphs/23_pred_case.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/24_pred_death.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/25_pred_recov.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/26_pred_case_comp.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/27_pred_death.svg" class="img-fluid" style="width: 65%;"/>
+  <img src="./src/images/graphs/28_pred_recov.svg" class="img-fluid" style="width: 65%;"/>
+  <p>Based on the graphs above, global cases, deaths, and recoveries will continue to rise for the foreseeable future. This trend will continue until either a vaccine is discovered or until herd immunity is achieved, both of which will take time to occur.</p>
+  <h2>Sources</h2>
+  <p>[1] "Coronavirus Disease 2019 (COVID-19) Situation Summary", <span style="font-style: italic;">Centers for Disease Control and Prevention</span>, 2020. [Online]. Available: https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html#covid19-pandemic. [Accessed: 27- Apr- 2020].</p>
+  <p>[2] "Provincial Daily Totals", <span style="font-style: italic;">Resources-covid19canada.hub.arcgis.com</span>, 2020. [Online]. Available: https://resources-covid19canada.hub.arcgis.com/datasets/provincial-daily-totals/data?page=7. [Accessed: 27- Apr- 2020].</p>
+  <p>[3] N. Bogart, "When and how will the COVID-19 pandemic end?", <span style="font-style: italic;">Coronavirus</span>, 2020. [Online]. Available: https://www.ctvnews.ca/health/coronavirus/when-and-how-will-the-covid-19-pandemic-end-1.4936086. [Accessed: 27- Apr- 2020].</p>
+  <p>[4] "Why Quebec's coronavirus cases have skyrocketed", <span style="font-style: italic;">The Globe and Mail</span>, 2020. [Online]. Available: https://www.theglobeandmail.com/canada/article-why-quebecs-coronavirus-cases-have-skyrocketed/. [Accessed: 27- Apr- 2020].</p>
+  <p>[5] "Quebec snowbirds flock home from Florida in 50 chartered buses | CBC News", <span style="font-style: italic;">CBC</span>, 2020. [Online]. Available: https://www.cbc.ca/news/canada/montreal/snowbirds-scrambling-to-return-to-quebec-1.5502182. [Accessed: 27- Apr- 2020].</p>
+  <p>[6] P. Inc., "RV-driving snowbird who recently travelled to U.S. expelled from two Quebec grocery stores", <span style="font-style: italic;">National Post</span>, 2020. [Online]. Available: https://nationalpost.com/news/local-news/coronavirus-rv-driving-snowbird-expelled-from-two-quebec-grocery-stores/wcm/1d226434-8655-4625-8098-72fa0a6be4d5. [Accessed: 27- Apr- 2020].</p>
+  <p>[7] "Ligne du temps COVID-19 au Qu&eacute;bec | INSPQ", <span style="font-style: italic;">INSPQ</span>, 2020. [Online]. Available: https://www.inspq.qc.ca/covid-19/donnees/ligne-du-temps. [Accessed: 27- Apr- 2020].</p>
+  <p>[8] <span style="font-style: italic;">Governmentofbc.maps.arcgis.com</span>, 2020. [Online]. Available: https://governmentofbc.maps.arcgis.com/home/item.html?id=f7d1318260b14ac2b334e81e55ee5c9e. [Accessed: 27- Apr- 2020].</p>
+  <p>[9] "Bloomberg - Are you a robot?", <span style="font-style: italic;">Bloomberg.com</span>, 2020. [Online]. Available: https://www.bloomberg.com/news/articles/2020-05-16/a-virus-epicenter-that-wasn-t-how-one-region-stemmed-the-deaths. [Accessed: 27- Apr- 2020].</p>
+  <p>[10] "Why B.C. is flattening the COVID-19 curve while numbers in central Canada surge | CBC News", <span style="font-style: italic;">CBC</span>, 2020. [Online]. Available: https://www.cbc.ca/news/canada/british-columbia/bc-ontario-quebec-covid-19-1.5524056. [Accessed: 27- Apr- 2020].</p>
+  <p>[11] "Coronavirus outbreak: New order in B.C. mandates shut down of all personal service establishments | Watch News Videos Online", <span style="font-style: italic;">Global News</span>, 2020. [Online]. Available: https://globalnews.ca/video/6713347/coronavirus-outbreak-new-order-in-b-c-mandates-shut-down-of-all-personal-service-establishments. [Accessed: 27- Apr- 2020].</p>
+  <p>[12] "Swedish PM bristles at foreign criticism over COVID-19 fight | CBC News", <span style="font-style: italic;">CBC</span>, 2020. [Online]. Available: https://www.cbc.ca/news/world/sweden-pm-lofven-coronavirus-1.5571073. [Accessed: 27- Apr- 2020].</p>
+  <p>[13] H. Ellyatt, "Sweden had no lockdown but its economy is expected to suffer just as badly as its European neighbors", <span style="font-style: italic;">CNBC</span>, 2020. [Online]. Available: https://www.cnbc.com/2020/04/30/coronavirus-sweden-economy-to-contract-as-severely-as-the-rest-of-europe.html. [Accessed: 27- Apr- 2020].</p>
+  <p>[14] "Donn&eacute;es COVID-19 au Qu&eacute;bec | INSPQ", <span style="font-style: italic;">INSPQ</span>, 2020. [Online]. Available: https://www.inspq.qc.ca/covid-19/donnees. [Accessed: 27- Apr- 2020].</p>
+  <p><span style="color: #24292e;">[15] Berry I, Soucy J-PR, Tuite A, Fisman D. Open access epidemiologic data and an interactive dashboard to monitor the COVID-19 outbreak in Canada. CMAJ. 2020 Apr 14;192(15):E420. doi: </span><a href="https://doi.org/10.1503/cmaj.75262" target="_blank" rel="noopener"><span style="color: #0366d6;">https://doi.org/10.1503/cmaj.75262</span></a></p>
+  <p><span style="color: #24292e;">[16] COVID-19 Data Repository by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University. </span><span style="text-decoration: underline;"><a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener">https://github.com/CSSEGISandData/COVID-19</a></span></p>
 
-<!-- <h1 style="font-weight: 700; margin: 0px 30%;">
-  About</h1> -->
-<div class="container-fluid padding">
-    <div class="row padding">
-            <div class="col-md-6 bio">
-                <p>I am in my third year of Systems Design Engineering student at the University of Waterloo. My passion for learning new things and solving new problems has lead me to internships involving data analytics, UX Design, and medical physics research. </p>
-                <p>My diverse background has given me perspective into my desire to discover insights in different fields that will shape the design of a challenging project. As such, I am currently seeking a data science internship for fall 2020.</p>
-                <p>In my free time you’ll find me bouldering at the nearest rockclimbing gym, trying new food and recipes, or travelling the world.</p>
-                <br>
-                <p>Let's get in touch!  or Let's chat! ?? __decide___              
-                  <br>
-                  <a href="https://www.linkedin.com/in/sienna-wishart-645536163/">LinkedIn</a>
-                  <br>
-                  <a href="mailto:skmwisha@uwaterloo.ca" target="_top">skmwisha@uwaterloo.ca</a> 
-                  <br>
-                  <a href="F20 Resume No Link Parse.pdf" target="_blank">resume</a>
-                  <br>
-                </p>
-                <br>
-                <!-- <p>Lets chat! Email me at 
-                  <a href="mailto:skmwisha@uwaterloo.ca" target="_top">
-                  skmwisha@uwaterloo.ca</a> or checkout my 
-                  <a href="F20 Resume No Link Parse.pdf" target="_blank">resume</a>!
-                </p> -->
-                
-            </div>
-        <div class="col-md-6 text-center">
-            <img src="images/profile_crop.JPG" class="img-fluid" alt="profile picture" style="width: 80%;"/>
-        </div>
-    </div>
 </div>
+
 
 <!-- <hr class="light"> -->
 

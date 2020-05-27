@@ -195,3 +195,20 @@ hr {
     margin-top: .3rem;
     margin-bottom: 1rem;
 }
+
+.covid {
+    margin: 0rem 6rem;
+    padding-bottom: 2rem;
+}
+
+.covid p {
+    font-size: medium;
+}
+
+.covid ul {
+    font-size: medium;
+}
+
+/* .covid img {
+    justify-content: center;
+} */
